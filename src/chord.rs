@@ -112,7 +112,7 @@ impl<'a> Chord<'a> {
 
         if let Some(barre) = &self.barre {
             for i in barre.from_string..barre.to_string * 2 + 1 {
-                board[24 * barre.fret as usize + i as usize] = '⸺'
+                board[24 * barre.fret as usize + i as usize] = '―'
             }
         }
 
