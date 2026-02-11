@@ -6,7 +6,7 @@ use std::collections::HashMap;
 
 pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["A"], "x02220", &["A major"], None, None),
-    Chord::new(&["A#"], "x03330", &["A sharp major"], None, Some(BARRE_FRET1)),
+    Chord::new(&["A#"], "x13331", &["A sharp major"], None, Some(BARRE_FRET1)),
     Chord::new(&["A+"], "x03221", &["A augmented"], None, None),
     Chord::new(&["Amaj7"], "x02120", &["A major 7ᵗʰ"], None, None),
     Chord::new(&["A6"], "x02222", &["A 6ᵗʰ"], None, None),
