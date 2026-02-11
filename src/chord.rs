@@ -48,7 +48,8 @@ pub const CAPO_FRET6: Capo = Capo::new(6);
 // pub const CAPO_FRET8: Capo = Capo::new(8);
 // pub const CAPO_FRET9: Capo = Capo::new(9);
 
-pub const FRETS: [char; 10] = ['🯰', '🯱', '🯲', '🯳', '🯴', '🯵', '🯶', '🯷', '🯸', '🯹'];
+// monospace unicode digits, see https://www.compart.com/en/unicode/U+1D7F6
+pub const MONOSP_DIGITS: [char; 10] = ['𝟶', '𝟷', '𝟸', '𝟹', '𝟺', '𝟻', '𝟼', '𝟽', '𝟾', '𝟿'];
 
 pub const FRETBOARD: &str = "\
 ◯ ◯ ◯ ◯ ◯ ◯
@@ -105,7 +106,7 @@ impl<'a> Chord<'a> {
 
         if let Some(capo) = &self.capo {
             for i in 0..5 {
-                board[12 + 2 * i + 1] = FRETS[capo.fret as usize]
+                board[12 + 2 * i + 1] = MONOSP_DIGITS[capo.fret as usize]
             }
         }
 
