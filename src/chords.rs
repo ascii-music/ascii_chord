@@ -26,7 +26,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["Asus2"], "x02200", &["A suspended 2ⁿᵈ"], None, None),
     Chord::new(&["A#sus2"], "x13311", &["A♯ suspended 2ⁿᵈ"], None, Some(BARRE_FRET1)),
     Chord::new(&["Asus4"], "x0223x", &["A suspended 4ᵗʰ"], None, None),
-    Chord::new(&["A#sus4"], "13341", &["A♯ suspended 4ᵗʰ"], None, Some(BARRE_FRET1)),
+    Chord::new(&["A#sus4"], "x13341", &["A♯ suspended 4ᵗʰ"], None, Some(BARRE_FRET1)),
     Chord::new(&["B"], "xx4442", &["B"], None, None),
     Chord::new(&["B+]"], "xx3221", &["B augmented"], None, Some(BARRE_FRET3)),
     Chord::new(&["Bmaj7"], "22130x", &["B raised 7ᵗʰ"], None, None),
