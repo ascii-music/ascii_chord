@@ -14,8 +14,8 @@ pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> St
     let display_names: Vec<String> = chords
         .iter()
         .map(|chord| match name_style {
-            NameStyle::ShortNames => join(chord.short_names.iter(), " | "),
-            NameStyle::FullNames => join(chord.names.iter(), " | "),
+            NameStyle::ShortNames => join(chord.short_names.iter(), "|"),
+            NameStyle::FullNames => join(chord.names.iter(), "|"),
             NameStyle::BothNames => chord.both_names(),
         })
         .collect();
@@ -27,11 +27,11 @@ pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> St
     let board_width = board[0].chars().count();
 
     // The 'padding' between chords horizontally
-    // Minimum `padding` spaces between chords;
-    // Minimum 2 spaces between titles;
+    // Minimum `padding` spaces between chords
+    // Minimum 1 space between titles
     let pad: usize = max(
         padding as i32,
-        max_display_name_width as i32 - board_width as i32 + 2,
+        max_display_name_width as i32 - board_width as i32 + 1,
     ) as usize;
 
     // We need to make sure the last one has enough additional padding for the title
