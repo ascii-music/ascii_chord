@@ -1004,7 +1004,7 @@
 │ │ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## D minor 7ᵗʰ | F 6ᵗʰ (Dm7 | F6)
+## D minor 7ᵗʰ|F 6ᵗʰ (Dm7|F6)
 ```
 ✕ ✕ ◯      
 ╒═╤═╤═╤═╤═╕
@@ -1304,7 +1304,7 @@
 │ │ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## E suspended | E suspended 4ᵗʰ (Esus | Esus4)
+## E suspended|E suspended 4ᵗʰ (Esus|Esus4)
 ```
 ◯       ◯ ◯
 ╒═╤═╤═╤═╤═╕

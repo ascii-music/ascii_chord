@@ -1,9 +1,9 @@
 use chord::{Chord, FRETBOARD};
-use clap::ArgEnum;
+use clap::ValueEnum;
 use itertools::join;
 use std::cmp::max;
 
-#[derive(Debug, ArgEnum, Clone)]
+#[derive(Debug, ValueEnum, Clone)]
 pub enum NameStyle {
     ShortNames,
     FullNames,

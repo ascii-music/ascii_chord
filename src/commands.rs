@@ -62,7 +62,7 @@ impl GetArgs {
 
 #[derive(Parser, Debug)]
 pub struct AllArgs {
-    #[clap(default_value_t = false)]
+    #[clap(short, long)]
     save: bool,
 }
 impl AllArgs {
@@ -89,7 +89,7 @@ pub struct ListArgs {
     names: Vec<String>,
 
     /// In the output, which name to include
-    #[clap(arg_enum, long="style", default_value_t=NameStyle::ShortNames)]
+    #[clap(value_enum, long="style", default_value_t=NameStyle::ShortNames)]
     name_style: NameStyle,
 
     /// In the output, how many spaces for padding between chords
