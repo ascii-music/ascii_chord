@@ -1,3 +1,7 @@
+[![CI](https://github.com/yzhong52/ascii_chord/actions/workflows/rust.yml/badge.svg)](
+  https://github.com/yzhong52/ascii_chord/actions?query=workflow%3Arust
+)
+
 # Ascii Chord
 
 A command line tool for showing how to play guitar chords
