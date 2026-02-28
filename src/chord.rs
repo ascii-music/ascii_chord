@@ -98,8 +98,8 @@ impl<'a> Chord<'a> {
     pub fn both_names(&self) -> String {
         format!(
             "{} ({})",
-            join(self.names, "|"),
-            join(self.short_names, "|")
+            join(self.names, " | "),
+            join(self.short_names, " | ")
         )
     }
 
