@@ -37,6 +37,23 @@ Or download from [rustup.rs](https://rustup.rs).
 
 > **Note:** Installing Rust via rustup creates `~/.cargo` and `~/.rustup` in your home directory and may modify your shell `PATH`.
 
+## First Run Warning
+
+The **first run will take 30–60 seconds** while cargo compiles the binary. This is normal — subsequent runs are fast (binary is cached in `target/`). Do not interrupt the first build.
+
+## Diagram Legend
+
+```
+✕  = mute this string (don't play)
+◯  = open string (play unfretted)
+●  = fret this position (filled dot)
+═  = nut (top of fretboard)
+─  = fret wire
+│  = string
+```
+
+Numbers on the left (when shown) indicate the starting fret position for higher-up chords.
+
 ## Usage
 
 The skill directory contains the full Rust source. Run from there:
@@ -67,7 +84,15 @@ cd ~/.openclaw/workspace/skills/ascii-chord && cargo run -- get Am 2>/dev/null
 # Multiple side by side (great for progressions)
 cd ~/.openclaw/workspace/skills/ascii-chord && cargo run -- list C G Am F 2>/dev/null
 
-# Full list of supported chord names
+# Full list of all supported chord names
+cd ~/.openclaw/workspace/skills/ascii-chord && cargo run -- all 2>/dev/null
+```
+
+## Discovering Supported Chords
+
+Not all chord voicings are supported. If a user asks for a chord that fails, use `all` to list every supported chord name and find the closest match:
+
+```bash
 cd ~/.openclaw/workspace/skills/ascii-chord && cargo run -- all 2>/dev/null
 ```
 
