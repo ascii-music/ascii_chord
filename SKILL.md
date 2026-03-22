@@ -6,6 +6,11 @@ metadata:
     requires:
       bins:
         - cargo
+    install:
+      - type: shell
+        label: "Post-install init (gitignore + pre-warm build)"
+        script: "scripts/init.sh"
+        note: "Creates .gitignore for /target and pre-builds the binary. Run once after install."
     sideEffects:
       note: >
         cargo build creates a target/ directory under the skill's source folder. These are normal
@@ -37,9 +42,21 @@ Or download from [rustup.rs](https://rustup.rs).
 
 > **Note:** Installing Rust via rustup creates `~/.cargo` and `~/.rustup` in your home directory and may modify your shell `PATH`.
 
+## Post-Install Setup
+
+After installing, run the init script once:
+
+```bash
+bash ~/.openclaw/workspace/skills/ascii-chord/scripts/init.sh
+```
+
+This will:
+1. Create a `.gitignore` in the skill directory to exclude cargo build artifacts (`/target`) from git
+2. Pre-warm the cargo build cache so the first chord lookup is fast
+
 ## First Run Warning
 
-The **first run will take 30–60 seconds** while cargo compiles the binary. This is normal — subsequent runs are fast (binary is cached in `target/`). Do not interrupt the first build.
+If you skip the init script, the **first `cargo run` will take 30–60 seconds** while cargo compiles the binary. This is normal — subsequent runs are fast (binary is cached in `target/`). Do not interrupt the first build.
 
 ## Diagram Legend
 
