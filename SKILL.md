@@ -1,5 +1,5 @@
 ---
-name: ascii-chord
+name: guitar-chord
 description: Show ASCII guitar chord diagrams using the ascii_chord CLI tool. Use when asked how to play a guitar chord, or to show chord charts/diagrams for any chord name (e.g. E, B7, Am, C, G, Dm, etc.). Requires cargo (Rust toolchain) to be installed. The source code is bundled with this skill — build it with cargo from the skill directory.
 metadata:
   openclaw:
@@ -19,7 +19,7 @@ metadata:
         and may update PATH.
 ---
 
-# ascii-chord
+# guitar-chord
 
 Display ASCII guitar chord diagrams using [ascii_chord](https://github.com/ascii-music/ascii_chord) — an open-source Rust CLI (MIT license, authored by the same person as this skill).
 
