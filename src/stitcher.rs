@@ -1,4 +1,4 @@
-use chord::{Chord, FRETBOARD};
+use chord::{Chord, make_fretboard};
 use clap::ValueEnum;
 use itertools::join;
 use std::cmp::max;
@@ -22,8 +22,11 @@ pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> St
 
     let max_display_name_width = display_names.iter().map(|name| name.len()).max().unwrap();
 
+    let num_frets = std::cmp::max(1, chords.iter().map(|c| c.max_fret()).max().unwrap_or(1));
+    let fretboard = make_fretboard(num_frets);
+
     let num_chords = chords.len();
-    let board: Vec<&str> = FRETBOARD.split('\n').collect();
+    let board: Vec<&str> = fretboard.split('\n').collect();
     let board_width = board[0].chars().count();
 
     // The 'padding' between chords horizontally
@@ -57,7 +60,7 @@ pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> St
     // Print the chord diagram
     for (i, chord) in chords.iter().enumerate() {
         let diagram: Vec<String> = chord
-            .fretboard()
+            .fretboard_n(num_frets)
             .split('\n')
             .map(|line| line.to_owned())
             .collect();

@@ -51,19 +51,20 @@ pub const CAPO_FRET8: Capo = Capo::new(8);
 // monospace unicode digits, see https://www.compart.com/en/unicode/U+1D7F6
 pub const MONOSP_DIGITS: [char; 10] = ['𝟶', '𝟷', '𝟸', '𝟹', '𝟺', '𝟻', '𝟼', '𝟽', '𝟾', '𝟿'];
 
-pub const FRETBOARD: &str = "\
-◯ ◯ ◯ ◯ ◯ ◯
-╒═╤═╤═╤═╤═╕
-│ │ │ │ │ │
-├─┼─┼─┼─┼─┤
-│ │ │ │ │ │
-├─┼─┼─┼─┼─┤
-│ │ │ │ │ │
-├─┼─┼─┼─┼─┤
-│ │ │ │ │ │
-├─┼─┼─┼─┼─┤
-│ │ │ │ │ │
-└─┴─┴─┴─┴─┘";
+pub fn make_fretboard(num_frets: usize) -> String {
+    let mut lines = vec![
+        "◯ ◯ ◯ ◯ ◯ ◯".to_string(),
+        "╒═╤═╤═╤═╤═╕".to_string(),
+    ];
+    for i in 0..num_frets {
+        lines.push("│ │ │ │ │ │".to_string());
+        if i < num_frets - 1 {
+            lines.push("├─┼─┼─┼─┼─┤".to_string());
+        }
+    }
+    lines.push("└─┴─┴─┴─┴─┘".to_string());
+    lines.join("\n")
+}
 
 #[derive(Debug, Clone)]
 pub struct Chord<'a> {
@@ -103,8 +104,18 @@ impl<'a> Chord<'a> {
         )
     }
 
-    pub fn fretboard(&self) -> String {
-        let mut board: Vec<char> = FRETBOARD.chars().collect();
+    pub fn max_fret(&self) -> usize {
+        let pattern_max = self.pattern.chars()
+            .filter_map(|c| c.to_digit(10))
+            .max()
+            .unwrap_or(0) as usize;
+        let barre_max = self.barre.as_ref().map(|b| b.fret as usize).unwrap_or(0);
+        std::cmp::max(pattern_max, barre_max)
+    }
+
+    pub fn fretboard_n(&self, num_frets: usize) -> String {
+        let template = make_fretboard(num_frets);
+        let mut board: Vec<char> = template.chars().collect();
 
         if let Some(capo) = &self.capo {
             for i in 0..5 {
@@ -130,5 +141,10 @@ impl<'a> Chord<'a> {
         }
 
         board.iter().collect()
+    }
+
+    pub fn fretboard(&self) -> String {
+        let num_frets = std::cmp::max(1, self.max_fret());
+        self.fretboard_n(num_frets)
     }
 }
