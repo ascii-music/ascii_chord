@@ -1,4 +1,4 @@
-use chord::{Chord, make_fretboard};
+use chord::{make_fretboard, Chord};
 use clap::ValueEnum;
 use itertools::join;
 use std::cmp::max;

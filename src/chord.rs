@@ -7,9 +7,7 @@ pub struct Capo {
 
 impl Capo {
     pub const fn new(fret: u8) -> Self {
-        Self {
-            fret: fret,
-        }
+        Self { fret: fret }
     }
 }
 
@@ -52,10 +50,7 @@ pub const CAPO_FRET8: Capo = Capo::new(8);
 pub const MONOSP_DIGITS: [char; 10] = ['𝟶', '𝟷', '𝟸', '𝟹', '𝟺', '𝟻', '𝟼', '𝟽', '𝟾', '𝟿'];
 
 pub fn make_fretboard(num_frets: usize) -> String {
-    let mut lines = vec![
-        "◯ ◯ ◯ ◯ ◯ ◯".to_string(),
-        "╒═╤═╤═╤═╤═╕".to_string(),
-    ];
+    let mut lines = vec!["◯ ◯ ◯ ◯ ◯ ◯".to_string(), "╒═╤═╤═╤═╤═╕".to_string()];
     for i in 0..num_frets {
         lines.push("│ │ │ │ │ │".to_string());
         if i < num_frets - 1 {
@@ -105,7 +100,9 @@ impl<'a> Chord<'a> {
     }
 
     pub fn max_fret(&self) -> usize {
-        let pattern_max = self.pattern.chars()
+        let pattern_max = self
+            .pattern
+            .chars()
             .filter_map(|c| c.to_digit(10))
             .max()
             .unwrap_or(0) as usize;

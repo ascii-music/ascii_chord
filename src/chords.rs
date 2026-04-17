@@ -41,7 +41,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["B9"], "x21222", &["B 9ᵗʰ"], None, None),
     Chord::new(&["Bm"], "x24432", &["B minor"], None, Some(BARRE_FRET2)),
     Chord::new(&["Bm"], "xx4432", &["B minor (no bar)"], None, None),
-    Chord::new(&["Bm7"], "x24232", &["B minor 7ᵗʰ"], None, Some(BARRE_FRET1)),
+    Chord::new(&["Bm7"], "x24232", &["B minor 7ᵗʰ"], None, Some(BARRE_FRET2)),
     Chord::new(&["Bsus"], "xx3341", &["B suspended"], None, None),
     Chord::new(&["Bsus2"], "x24422", &["B suspended 2ⁿᵈ"], None, Some(BARRE_FRET2)),
     Chord::new(&["Bsus4"], "x02230", &["B suspended 4ᵗʰ"], Some(CAPO_FRET2), None),
