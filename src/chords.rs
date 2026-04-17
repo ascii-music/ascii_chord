@@ -1,7 +1,7 @@
 use chord::Chord;
 use chord::{BARRE_FRET1, BARRE_FRET2, BARRE_FRET3};
-use chord::{CAPO_FRET1, CAPO_FRET2, CAPO_FRET3, CAPO_FRET4, CAPO_FRET5};
-use chord::{CAPO_FRET6, CAPO_FRET7, CAPO_FRET8};
+use chord::{CAPO_FRET2, CAPO_FRET3, CAPO_FRET4};
+use chord::{CAPO_FRET6, CAPO_FRET8};
 use once_cell::sync::Lazy;
 use std::collections::HashMap;
 
@@ -169,9 +169,7 @@ pub static ALL_CHORDS_BY_SHORT_NAMES: Lazy<HashMap<String, Vec<&'static Chord<'s
 
         for chord in ALL_CHORDS {
             for sn in chord.short_names {
-                map.entry(sn.to_ascii_lowercase())
-                    .or_default()
-                    .push(chord);
+                map.entry(sn.to_ascii_lowercase()).or_default().push(chord);
             }
         }
         map

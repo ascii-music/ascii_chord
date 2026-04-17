@@ -1,0 +1,2 @@
+# Keep long Chord::new() calls on one line (default fn_call_width=60 splits them)
+fn_call_width = 100
