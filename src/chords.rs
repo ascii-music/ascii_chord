@@ -127,7 +127,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["F+"], "xx3221", &["F augmented"], None, None),
     Chord::new(&["Fmaj7"], "xx3210", &["F raised 7ᵗʰ"], None, None),
     Chord::new(&["F#maj7", "Gbmaj7"], "xx4321", &["F♯ raised 7ᵗʰ"], None, None),
-    Chord::new(&["F6#11/A"], "x00201", &["F 6ᵗʰ 11ᵗʰ inverted on A"], None, None),  // x0323x
+    Chord::new(&["F6#11/A"], "x00201", &["F 6ᵗʰ 11ᵗʰ inverted on A"], None, None), // x0323x
     Chord::new(&["F7"], "131211", &["F 7ᵗʰ"], None, None),
     Chord::new(&["F#7", "Gb7"], "242322", &["F♯ 7ᵗʰ"], None, Some(BARRE_FRET2)),
     Chord::new(&["F9"], "xx3243", &["F 9ᵗʰ"], None, None),
