@@ -1,4 +1,4 @@
-use chord::{Chord, FRETBOARD};
+use chord::{make_fretboard, Chord};
 use clap::ValueEnum;
 use itertools::join;
 use std::cmp::max;
@@ -22,23 +22,22 @@ pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> St
 
     let max_display_name_width = display_names.iter().map(|name| name.len()).max().unwrap();
 
+    let num_frets = std::cmp::max(1, chords.iter().map(|c| c.max_fret()).max().unwrap_or(1));
+    let fretboard = make_fretboard(num_frets);
+
     let num_chords = chords.len();
-    let board: Vec<&str> = FRETBOARD.split('\n').collect();
+    let board: Vec<&str> = fretboard.split('\n').collect();
     let board_width = board[0].chars().count();
 
     // The 'padding' between chords horizontally
     // Minimum `padding` spaces between chords
     // Minimum 1 space between titles
-    let pad: usize = max(
-        padding as i32,
-        max_display_name_width as i32 - board_width as i32 + 1,
-    ) as usize;
+    let pad: usize =
+        max(padding as i32, max_display_name_width as i32 - board_width as i32 + 1) as usize;
 
     // We need to make sure the last one has enough additional padding for the title
-    let last_padding = max(
-        0,
-        display_names.last().unwrap().len() as i32 - board_width as i32,
-    ) as usize;
+    let last_padding =
+        max(0, display_names.last().unwrap().len() as i32 - board_width as i32) as usize;
 
     let width = (board_width + pad) * num_chords - pad + last_padding;
 
@@ -57,7 +56,7 @@ pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> St
     // Print the chord diagram
     for (i, chord) in chords.iter().enumerate() {
         let diagram: Vec<String> = chord
-            .fretboard()
+            .fretboard_n(num_frets)
             .split('\n')
             .map(|line| line.to_owned())
             .collect();
