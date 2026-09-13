@@ -36,12 +36,15 @@ pub const BARRE_FRET1: Barre = Barre::new(1);
 pub const BARRE_FRET2: Barre = Barre::new(2);
 pub const BARRE_FRET3: Barre = Barre::new(3);
 
+pub const CAPO_FRET1: Capo = Capo::new(1);
 pub const CAPO_FRET2: Capo = Capo::new(2);
 pub const CAPO_FRET3: Capo = Capo::new(3);
 pub const CAPO_FRET4: Capo = Capo::new(4);
+pub const CAPO_FRET5: Capo = Capo::new(5);
 pub const CAPO_FRET6: Capo = Capo::new(6);
+pub const CAPO_FRET7: Capo = Capo::new(7);
 pub const CAPO_FRET8: Capo = Capo::new(8);
-// pub const CAPO_FRET9: Capo = Capo::new(9);
+pub const CAPO_FRET9: Capo = Capo::new(9);
 
 // monospace unicode digits, see https://www.compart.com/en/unicode/U+1D7F6
 pub const MONOSP_DIGITS: [char; 10] = ['𝟶', '𝟷', '𝟸', '𝟹', '𝟺', '𝟻', '𝟼', '𝟽', '𝟾', '𝟿'];
