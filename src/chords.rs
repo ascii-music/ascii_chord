@@ -34,7 +34,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["Am/C"], "x32210", &["A minor over C"], None, None),
     Chord::new(&["Am/G"], "302210", &["A minor over G"], None, None),
     Chord::new(&["Am/F#", "Am/Gb"], "2x2210", &["A minor over F♯"], None, None),
-    // Chord::new(&["Amadd2"], "022002", &["A minor added 2ⁿᵈ"], Some(CAPO_FRET5), None),
+    Chord::new(&["Amadd2"], "022002", &["A minor added 2ⁿᵈ"], Some(CAPO_FRET5), None),
     Chord::new(&["Amadd2"], "x02410", &["A minor added 2ⁿᵈ (no bar)"], None, None),
     Chord::new(&["B"], "xx4442", &["B"], None, None),
     Chord::new(&["B+]"], "xx3221", &["B augmented"], None, Some(BARRE_FRET3)),
