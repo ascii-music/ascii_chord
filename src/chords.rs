@@ -1,3 +1,4 @@
+#![allow(unused)]
 use chord::Chord;
 use chord::{BARRE_FRET1, BARRE_FRET2, BARRE_FRET3};
 use chord::{CAPO_FRET1, CAPO_FRET2, CAPO_FRET3, CAPO_FRET4, CAPO_FRET5};
@@ -86,7 +87,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["D9"], "200210", &["D 9ᵗʰ"], None, None),
     Chord::new(&["Dm"], "xx0231", &["D minor"], None, None),
     Chord::new(&["D#m", "Ebm"], "x02210", &["D♯ minor"], Some(CAPO_FRET6), None),
-    Chord::new(&["D#m", "Ebm"], "xx1342", &["D♯ minor"], None, None),
+    Chord::new(&["D#m", "Ebm"], "xx1342", &["D♯ minor (no bar)"], None, None),
     Chord {
         short_names: &["Dm7", "F6"],
         pattern: "xx0211",
