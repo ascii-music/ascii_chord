@@ -1,8 +1,9 @@
 #![allow(unused)]
 use chord::Chord;
 use chord::{BARRE_FRET1, BARRE_FRET2, BARRE_FRET3};
-use chord::{CAPO_FRET1, CAPO_FRET2, CAPO_FRET3, CAPO_FRET4, CAPO_FRET5};
-use chord::{CAPO_FRET6, CAPO_FRET7, CAPO_FRET8};
+use chord::{CAPO_FRET1, CAPO_FRET2, CAPO_FRET3};
+use chord::{CAPO_FRET4, CAPO_FRET5, CAPO_FRET6};
+use chord::{CAPO_FRET7, CAPO_FRET8};
 use once_cell::sync::Lazy;
 use std::collections::HashMap;
 
