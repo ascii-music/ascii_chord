@@ -86,6 +86,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["D9"], "200210", &["D 9ᵗʰ"], None, None),
     Chord::new(&["Dm"], "xx0231", &["D minor"], None, None),
     Chord::new(&["D#m", "Ebm"], "x02210", &["D♯ minor"], Some(CAPO_FRET6), None),
+    Chord::new(&["D#m", "Ebm"], "xx1342", &["D♯ minor"], None, None),
     Chord {
         short_names: &["Dm7", "F6"],
         pattern: "xx0211",
@@ -141,6 +142,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["Fsus4"], "133311", &["F suspended 4ᵗʰ"], None, Some(BARRE_FRET1)),
     Chord::new(&["F#sus4", "Gbsus4"], "244422", &["F♯ suspended 4ᵗʰ"], None, Some(BARRE_FRET2)),
     Chord::new(&["F/A"], "x03211", &["F over A"], None, None),
+    Chord::new(&["F/C"], "x33211", &["F over C"], None, None),
     Chord::new(&["F/G"], "303211", &["F over G"], None, None),
     Chord::new(&["G"], "320003", &["G"], None, None),
     Chord::new(&["G#", "Ab"], "022100", &["G♯"], Some(CAPO_FRET4), None),
