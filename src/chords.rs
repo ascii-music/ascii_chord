@@ -247,7 +247,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["Esus2"], "022452", &["E suspended 2ⁿᵈ"], None, None),
     Chord::new(&["E/C#", "E/Db"], "x42100", &["E over C♯", "E over D♭"], None, None),
     Chord::new(&["F"], "133211", &["F (barre 1)"], None, Some(BARRE_FRET1)),
-    Chord::new(&["F5"], "133xxx", &["F power chord (barre 1)"], None, Some(BARRE_FRET1)),
+    Chord::new(&["F5"], "133xxx", &["F power chord"], None, None),
     Chord::new(&["Fadd9"], "xx3213", &["F added 9ᵗʰ"], None, None),
     Chord::new(&["F#", "Gb"], "244322", &["F♯ (barre 2)", "G♭ (barre 2)"], None, Some(BARRE_FRET2)),
     Chord::new(&["F+"], "xx3221", &["F augmented"], None, None),
