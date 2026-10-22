@@ -132,6 +132,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["D#maj7", "Ebmaj7"], "xx1333", &["D♯ raised 7ᵗʰ", "E♭ raised 7ᵗʰ"], None, None),
     Chord::new(&["D6"], "x00202", &["D 6ᵗʰ"], None, None),
     Chord::new(&["D7"], "xx0212", &["D 7ᵗʰ"], None, None),
+    Chord::new(&["D7sus2"], "xx0210", &["D 7ᵗʰ suspended 2ⁿᵈ"], None, None),
     Chord::new(&["D#7", "Eb7"], "xx1323", &["D♯ 7ᵗʰ", "E♭ 7ᵗʰ"], None, None),
     Chord::new(&["D9"], "200210", &["D 9ᵗʰ"], None, None),
     Chord::new(&["Dm"], "xx0231", &["D minor"], None, None),
@@ -174,7 +175,8 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["E7"], "022130", &["E 7ᵗʰ (shape 2)"], None, None),
     Chord::new(&["E9"], "020102", &["E 9ᵗʰ"], None, None),
     Chord::new(&["Em"], "022000", &["E minor"], None, None),
-    Chord::new(&["Em7"], "022030", &["E minor 7ᵗʰ"], None, None),
+    Chord::new(&["Em7"], "022030", &["E minor 7ᵗʰ (shape 1)"], None, None),
+    Chord::new(&["Em7"], "020000", &["E minor 7ᵗʰ (shape 2)"], None, None),
     Chord {
         short_names: &["Esus", "Esus4"],
         pattern: "022200",
