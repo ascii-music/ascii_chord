@@ -81,7 +81,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["B"], "xx4442", &["B"], None, None),
     Chord::new(&["B5"], "x244xx", &["B power chord"], None, None),
     Chord::new(&["Bdim"], "x2343x", &["B diminished"], None, None),
-    Chord::new(&["B+"], "xx3221", &["B augmented"], None, Some(BARRE_FRET3)),
+    Chord::new(&["B+"], "x21003", &["B augmented"], None, None),
     Chord::new(&["Bmaj7"], "22130x", &["B raised 7ᵗʰ"], None, None),
     Chord::new(&["B6"], "224444", &["B 6ᵗʰ"], None, None),
     Chord::new(&["B7"], "x21202", &["B 7ᵗʰ"], None, None),
