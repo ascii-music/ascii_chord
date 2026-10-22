@@ -414,6 +414,82 @@ mod tests {
     }
 
     #[test]
+    fn test_nothing_below_barre() {
+        for chord in ALL_CHORDS {
+            if let Some(barre) = chord.barre {
+                for fret in chord.pattern.chars().filter_map(|c| c.to_digit(10)) {
+                    assert!(fret >= barre.fret as u32, "Fret below barre in {:?}", chord);
+                }
+            }
+        }
+    }
+
+    #[test]
+    fn test_capo_and_barre_in_names() {
+        for chord in ALL_CHORDS {
+            for name in chord.names {
+                assert_eq!(name.contains("(capo "), chord.capo.is_some(), "{}", name);
+                assert_eq!(name.contains("(barre "), chord.barre.is_some(), "{}", name);
+                if let Some(capo) = chord.capo {
+                    assert!(name.contains(&format!("(capo {})", capo.fret)), "{}", name);
+                }
+                if let Some(barre) = chord.barre {
+                    assert!(name.contains(&format!("(barre {})", barre.fret)), "{}", name);
+                }
+            }
+        }
+    }
+
+    // C = 0, C# = 1, ...
+    const NOTES: [&[&str]; 12] = [
+        &["C"],
+        &["C#", "Db"],
+        &["D"],
+        &["D#", "Eb"],
+        &["E"],
+        &["F"],
+        &["F#", "Gb"],
+        &["G"],
+        &["G#", "Ab"],
+        &["A"],
+        &["A#", "Bb"],
+        &["B"],
+    ];
+    // E A D G B E
+    const OPEN_STRINGS: [usize; 6] = [4, 9, 2, 7, 11, 4];
+
+    // NOTE: with a capo the frets are relative to it, with a barre they are absolute
+    fn sounding_notes(chord: &Chord) -> Vec<usize> {
+        let capo = chord.capo.map_or(0, |c| c.fret as usize);
+        let frets = chord.pattern.chars().map(|c| c.to_digit(10));
+        let notes = OPEN_STRINGS.iter().zip(frets);
+        let mut notes: Vec<_> = notes
+            .filter_map(|(open, fret)| Some((open + fret? as usize + capo) % 12))
+            .collect();
+        notes.sort();
+        notes.dedup();
+        notes
+    }
+
+    #[test]
+    fn test_major_and_minor_chords() {
+        for chord in ALL_CHORDS {
+            for name in chord.short_names {
+                // "C#m" is C# with a minor third, "C#" is C# with a major third
+                let (root_name, third) = match name.strip_suffix('m') {
+                    Some(root_name) => (root_name, 3),
+                    None => (*name, 4),
+                };
+                if let Some(root) = NOTES.iter().position(|n| n.contains(&root_name)) {
+                    let mut triad = vec![root, (root + third) % 12, (root + 7) % 12];
+                    triad.sort();
+                    assert_eq!(sounding_notes(chord), triad, "{}", name);
+                }
+            }
+        }
+    }
+
+    #[test]
     fn test_aliases() {
         for chord in ALL_CHORDS {
             assert_eq!(
