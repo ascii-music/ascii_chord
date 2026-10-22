@@ -50,6 +50,7 @@ pub static ALL_CHORDS: &[Chord] = &[
     Chord::new(&["Am/C"], "x32210", &["A minor over C"], None, None),
     Chord::new(&["Am/G"], "302210", &["A minor over G"], None, None),
     Chord::new(&["Am/F#", "Am/Gb"], "2x2210", &["A minor over F♯", "A minor over G♭"], None, None),
+    Chord::new(&["Am/E"], "002210", &["A minor over E"], None, None),
     Chord::new(&["A#", "Bb"], "x13331", &["A♯ (barre 1)", "B♭ (barre 1)"], None, Some(BARRE_FRET1)),
     Chord::new(
         &["A#maj7", "Bbmaj7"],
@@ -201,6 +202,8 @@ pub static ALL_CHORDS: &[Chord] = &[
     Chord::new(&["D/B"], "x20232", &["D over B"], None, None),
     Chord::new(&["D/F#", "D/Gb"], "2x0232", &["D over F♯", "D over G♭"], None, None),
     Chord::new(&["D/G"], "300232", &["D over G"], None, None),
+    Chord::new(&["Dm/F"], "1x0231", &["D minor over F"], None, None),
+    Chord::new(&["Dm/A"], "x00231", &["D minor over A"], None, None),
     Chord::new(&["D#", "Eb"], "x02220", &["D♯ (capo 6)", "E♭ (capo 6)"], Some(CAPO_FRET6), None),
     Chord::new(&["D#maj7", "Ebmaj7"], "xx1333", &["D♯ raised 7ᵗʰ", "E♭ raised 7ᵗʰ"], None, None),
     Chord::new(&["D#7", "Eb7"], "xx1323", &["D♯ 7ᵗʰ", "E♭ 7ᵗʰ"], None, None),
@@ -247,6 +250,8 @@ pub static ALL_CHORDS: &[Chord] = &[
     Chord::new(&["Esus2"], "022452", &["E suspended 2ⁿᵈ"], None, None),
     Chord::new(&["E7sus4"], "020200", &["E 7ᵗʰ suspended 4ᵗʰ"], None, None),
     Chord::new(&["E/C#", "E/Db"], "x42100", &["E over C♯", "E over D♭"], None, None),
+    Chord::new(&["E/G#", "E/Ab"], "4x2100", &["E over G♯", "E over A♭"], None, None),
+    Chord::new(&["Em/B"], "x22000", &["E minor over B"], None, None),
     Chord::new(&["F"], "133211", &["F (barre 1)"], None, Some(BARRE_FRET1)),
     Chord::new(&["F5"], "133xxx", &["F power chord"], None, None),
     Chord::new(&["F+"], "xx3221", &["F augmented"], None, None),
@@ -266,6 +271,7 @@ pub static ALL_CHORDS: &[Chord] = &[
     Chord::new(&["F/A"], "x03211", &["F over A"], None, None),
     Chord::new(&["F/C"], "x33211", &["F over C"], None, None),
     Chord::new(&["F/G"], "303211", &["F over G"], None, None),
+    Chord::new(&["F/E"], "0x3211", &["F over E"], None, None),
     Chord::new(&["F6#11/A"], "x00201", &["F 6ᵗʰ 11ᵗʰ inverted on A"], None, None), // x0323x
     Chord::new(&["F#", "Gb"], "244322", &["F♯ (barre 2)", "G♭ (barre 2)"], None, Some(BARRE_FRET2)),
     Chord::new(&["F#maj7", "Gbmaj7"], "xx4321", &["F♯ raised 7ᵗʰ", "G♭ raised 7ᵗʰ"], None, None),
@@ -324,6 +330,7 @@ pub static ALL_CHORDS: &[Chord] = &[
     Chord::new(&["G/B"], "x20033", &["G over B"], None, None),
     Chord::new(&["G/F"], "120033", &["G over F"], None, None),
     Chord::new(&["G/F#", "G/Gb"], "220033", &["G over F♯", "G over G♭"], None, None),
+    Chord::new(&["G/D"], "xx0003", &["G over D"], None, None),
     Chord::new(&["G#", "Ab"], "022100", &["G♯ (capo 4)", "A♭ (capo 4)"], Some(CAPO_FRET4), None),
     Chord::new(
         &["G#maj7", "Abmaj7"],
