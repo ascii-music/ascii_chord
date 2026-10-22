@@ -83,7 +83,7 @@ impl AllArgs {
 #[derive(Parser, Debug)]
 pub struct ListArgs {
     /// Names of the chords
-    #[clap()]
+    #[clap(required = true)]
     names: Vec<String>,
 
     /// In the output, which name to include
@@ -117,6 +117,9 @@ impl ListArgs {
                 }
             })
             .collect();
+        if chords.is_empty() {
+            return;
+        }
         let row = stitcher::row(chords, self.name_style, self.padding);
         println!("{}", row);
     }

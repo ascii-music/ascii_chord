@@ -14,6 +14,10 @@ pub enum NameStyle {
 }
 
 pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> String {
+    if chords.is_empty() {
+        return String::new();
+    }
+
     let display_names: Vec<String> = chords
         .iter()
         .map(|chord| match name_style {
