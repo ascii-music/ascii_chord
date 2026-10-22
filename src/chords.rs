@@ -251,6 +251,7 @@ pub static ALL_CHORDS: &[Chord] = &[
     Chord::new(&["F+"], "xx3221", &["F augmented"], None, None),
     Chord::new(&["Fmaj7"], "xx3210", &["F raised 7ᵗʰ"], None, None),
     Chord::new(&["F6"], "100211", &["F 6ᵗʰ"], None, None),
+    Chord::new(&["F6"], "1x3231", &["F 6ᵗʰ (barre 1)"], None, Some(BARRE_FRET1)),
     Chord::new(&["Fadd9"], "xx3213", &["F added 9ᵗʰ"], None, None),
     Chord::new(&["F7"], "131211", &["F 7ᵗʰ (barre 1)"], None, Some(BARRE_FRET1)),
     Chord::new(&["F9"], "xx3243", &["F 9ᵗʰ"], None, None),
