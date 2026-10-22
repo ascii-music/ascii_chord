@@ -254,7 +254,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["Fmaj7"], "xx3210", &["F raised 7ᵗʰ"], None, None),
     Chord::new(&["F#maj7", "Gbmaj7"], "xx4321", &["F♯ raised 7ᵗʰ", "G♭ raised 7ᵗʰ"], None, None),
     Chord::new(&["F6#11/A"], "x00201", &["F 6ᵗʰ 11ᵗʰ inverted on A"], None, None), // x0323x
-    Chord::new(&["F7"], "131211", &["F 7ᵗʰ"], None, None),
+    Chord::new(&["F7"], "131211", &["F 7ᵗʰ (barre 1)"], None, Some(BARRE_FRET1)),
     Chord::new(
         &["F#7", "Gb7"],
         "242322",
@@ -272,7 +272,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
         None,
         Some(BARRE_FRET2),
     ),
-    Chord::new(&["Fm7"], "131111", &["F minor 7ᵗʰ"], None, None),
+    Chord::new(&["Fm7"], "131111", &["F minor 7ᵗʰ (barre 1)"], None, Some(BARRE_FRET1)),
     Chord::new(
         &["F#m7", "Gbm7"],
         "242222",
