@@ -107,7 +107,7 @@ pub static ALL_CHORDS: &[Chord] = &[
     Chord::new(&["C5"], "x355xx", &["C power chord"], None, None),
     Chord::new(&["C+"], "x32110", &["C augmented"], None, None),
     Chord::new(&["Cmaj7"], "x32000", &["C raised 7ᵗʰ"], None, None),
-    Chord::new(&["C6"], "x02213", &["C 6ᵗʰ"], None, None),
+    Chord::new(&["C6"], "x32210", &["C 6ᵗʰ"], None, None),
     Chord {
         short_names: &["Cadd2", "Cadd9"],
         pattern: "x32033",
