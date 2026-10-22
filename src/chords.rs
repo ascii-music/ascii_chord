@@ -302,7 +302,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
     Chord::new(&["G9"], "300201", &["G 9ᵗʰ"], None, None),
     Chord::new(&["Gm"], "xx0333", &["G minor"], None, None),
     Chord::new(&["G#m", "Abm"], "022000", &["G♯ minor", "A♭ minor"], Some(CAPO_FRET4), None),
-    Chord::new(&["Gm7"], "x13030", &["G minor 7ᵗʰ (shape 1)"], None, None),
+    Chord::new(&["Gm7"], "3xx331", &["G minor 7ᵗʰ (shape 1)"], None, None),
     Chord::new(&["Gm7"], "020000", &["G minor 7ᵗʰ (shape 2)"], Some(CAPO_FRET3), None),
     Chord::new(
         &["G#m7", "Abm7"],
