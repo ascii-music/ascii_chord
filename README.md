@@ -44,24 +44,24 @@ For different ways to play the same chord:
 
 ```
 $ aschord list Bm --style full-names
-B minor          B minor (no bar)
-✕                ✕ ✕             
-╒═╤═╤═╤═╤═╕      ╒═╤═╤═╤═╤═╕     
-│ │ │ │ │ │      │ │ │ │ │ │     
-├─┼─┼─┼─┼─┤      ├─┼─┼─┼─┼─┤     
-――◯―――――――◯      │ │ │ │ │ ◯     
-├─┼─┼─┼─┼─┤      ├─┼─┼─┼─┼─┤     
-│ │ │ │ ◯ │      │ │ │ │ ◯ │     
-├─┼─┼─┼─┼─┤      ├─┼─┼─┼─┼─┤     
-│ │ ◯ ◯ │ │      │ │ ◯ ◯ │ │     
-└─┴─┴─┴─┴─┘      └─┴─┴─┴─┴─┘     
+B minor (barre 2) B minor    
+✕                 ✕ ✕        
+╒═╤═╤═╤═╤═╕       ╒═╤═╤═╤═╤═╕
+│ │ │ │ │ │       │ │ │ │ │ │
+├─┼─┼─┼─┼─┤       ├─┼─┼─┼─┼─┤
+――◯―――――――◯       │ │ │ │ │ ◯
+├─┼─┼─┼─┼─┤       ├─┼─┼─┼─┼─┤
+│ │ │ │ ◯ │       │ │ │ │ ◯ │
+├─┼─┼─┼─┼─┤       ├─┼─┼─┼─┼─┤
+│ │ ◯ ◯ │ │       │ │ ◯ ◯ │ │
+└─┴─┴─┴─┴─┘       └─┴─┴─┴─┴─┘
 ```
 
 For multiple chords with full names:
 
 ```
 $ aschord list Em Esus4 Asus2 F --style full-names
-E minor                        E suspended|E suspended 4ᵗʰ    A suspended 2ⁿᵈ                F          
+E minor                        E suspended|E suspended 4ᵗʰ    A suspended 2ⁿᵈ                F (barre 1)
 ◯     ◯ ◯ ◯                    ◯       ◯ ◯                    ✕ ◯     ◯ ◯                               
 ╒═╤═╤═╤═╤═╕                    ╒═╤═╤═╤═╤═╕                    ╒═╤═╤═╤═╤═╕                    ╒═╤═╤═╤═╤═╕
 │ │ │ │ │ │                    │ │ │ │ │ │                    │ │ │ │ │ │                    ◯―――――――◯―◯
@@ -76,7 +76,7 @@ Here is an example of using a [bar chord](https://en.wikipedia.org/wiki/Bar_chor
 
 ```
 $ aschord list F G#
-F              G#         
+F              G#|Ab      
                ◯       ◯ ◯
 ╒═╤═╤═╤═╤═╕    ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
 ◯―――――――◯―◯    │ │ │ ◯ │ │

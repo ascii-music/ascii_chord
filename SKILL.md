@@ -62,14 +62,16 @@ If you skip the init script, the **first `cargo run` will take 30–60 seconds**
 
 ```
 ✕  = mute this string (don't play)
-◯  = open string (play unfretted)
-●  = fret this position (filled dot)
-═  = nut (top of fretboard)
-─  = fret wire
+◯  = open string (top row) or finger placement (on a fret)
+╒═╤  = nut (top of fretboard)
+├─┼  = fret wire
 │  = string
+―  = barre (one finger across several strings), the fret is given in the chord name, e.g. "(barre 2)"
+𝟺  = capo, shown on the first fret line (here: capo on fret 4); fingered frets are relative to the capo
 ```
 
-Numbers on the left (when shown) indicate the starting fret position for higher-up chords.
+Chords played with a capo or a barre say so in their full name, e.g. `B augmented (capo 3)` or `B minor (barre 2)`.
+Use `--style full-names` (or `both-names`) with `list` to see these.
 
 ## Usage
 
@@ -116,6 +118,7 @@ cd ~/.openclaw/workspace/skills/ascii-chord && cargo run -- all 2>/dev/null
 ## Notes
 
 - Suppress build warnings with `2>/dev/null`
-- Chord names are case-sensitive (`Am` not `am`, `B7` not `b7`)
+- Chord names are case-insensitive (`Am`, `am`, `AM` all work); `#` is sharp and `b` is flat (`A#` = `Bb`)
+- Some chords have several shapes; `list` shows all of them, `get` shows only the first
 - After first build, subsequent runs are fast (binary cached by cargo in `target/`)
 - Source repo: https://github.com/ascii-music/ascii_chord (MIT licensed)
