@@ -83,11 +83,11 @@ impl AllArgs {
 #[derive(Parser, Debug)]
 pub struct ListArgs {
     /// Names of the chords
-    #[clap()]
+    #[clap(required = true)]
     names: Vec<String>,
 
     /// In the output, which name to include
-    #[clap(value_enum, long="style", default_value_t=NameStyle::ShortNames)]
+    #[clap(value_enum, long="style", default_value_t=NameStyle::Short)]
     name_style: NameStyle,
 
     /// In the output, how many spaces for padding between chords
@@ -101,11 +101,11 @@ impl ListArgs {
         let chords: Vec<Chord<'static>> = self
             .names
             .iter()
-            .map(|name| -> Vec<Chord<'static>> {
+            .flat_map(|name| -> Vec<Chord<'static>> {
                 // Find the ones that matches the chord name
                 match chords::ALL_CHORDS_BY_SHORT_NAMES.get(&name.to_ascii_lowercase()) {
                     Some::<&Vec<&'static Chord<'static>>>(matched_chords) => matched_chords
-                        .into_iter()
+                        .iter()
                         .map(|chord: &&'static Chord<'static>| -> Chord<'static> {
                             (*chord).clone()
                         })
@@ -116,8 +116,10 @@ impl ListArgs {
                     }
                 }
             })
-            .flatten()
             .collect();
+        if chords.is_empty() {
+            return;
+        }
         let row = stitcher::row(chords, self.name_style, self.padding);
         println!("{}", row);
     }

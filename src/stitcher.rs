@@ -5,22 +5,33 @@ use std::cmp::max;
 
 #[derive(Debug, ValueEnum, Clone)]
 pub enum NameStyle {
-    ShortNames,
-    FullNames,
-    BothNames,
+    #[value(name = "short-names")]
+    Short,
+    #[value(name = "full-names")]
+    Full,
+    #[value(name = "both-names")]
+    Both,
 }
 
 pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> String {
+    if chords.is_empty() {
+        return String::new();
+    }
+
     let display_names: Vec<String> = chords
         .iter()
         .map(|chord| match name_style {
-            NameStyle::ShortNames => join(chord.short_names.iter(), "|"),
-            NameStyle::FullNames => join(chord.names.iter(), "|"),
-            NameStyle::BothNames => chord.both_names(),
+            NameStyle::Short => join(chord.short_names.iter(), "|"),
+            NameStyle::Full => join(chord.names.iter(), "|"),
+            NameStyle::Both => chord.both_names(),
         })
         .collect();
 
-    let max_display_name_width = display_names.iter().map(|name| name.len()).max().unwrap();
+    let max_display_name_width = display_names
+        .iter()
+        .map(|name| name.chars().count())
+        .max()
+        .unwrap();
 
     let num_frets = std::cmp::max(1, chords.iter().map(|c| c.max_fret()).max().unwrap_or(1));
     let fretboard = make_fretboard(num_frets);
@@ -37,7 +48,7 @@ pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> St
 
     // We need to make sure the last one has enough additional padding for the title
     let last_padding =
-        max(0, display_names.last().unwrap().len() as i32 - board_width as i32) as usize;
+        max(0, display_names.last().unwrap().chars().count() as i32 - board_width as i32) as usize;
 
     let width = (board_width + pad) * num_chords - pad + last_padding;
 

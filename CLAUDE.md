@@ -49,6 +49,10 @@ Add a line to `ALL_CHORDS` in `chords.rs`:
 Chord::new(&["ShortName"], "pattern", &["Full Name"], capo_option, barre_option),
 ```
 
+Keep `ALL_CHORDS` sorted: by root (A, A#, B, C, ...), then by quality (major, 5, +, maj7, 6, add9, 7, 9, minor family, dim, sus), then plain shapes before capo shapes, with slash chords last for each root. Frets are absolute with a barre but offsets from the capo with a capo.
+
+Long names of capo/barre shapes get a `(capo N)` / `(barre N)` suffix. `cargo test` checks these suffixes, that no string is below its barre, and that plain major/minor chords sound the right notes.
+
 Then regenerate `all_supported_chords.md`:
 
 ```
@@ -57,5 +61,5 @@ cargo run -- all --save
 
 ## After any rendering change
 
-Update the examples in `readme.md` by running each command shown there and pasting the output.
+Update the examples in `README.md` by running each command shown there and pasting the output.
 
