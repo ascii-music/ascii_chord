@@ -61,15 +61,15 @@ For multiple chords with full names:
 
 ```
 $ aschord list Em Esus4 Asus2 F --style full-names
-E minor                        E suspended|E suspended 4ᵗʰ    A suspended 2ⁿᵈ                F (barre 1)
-◯     ◯ ◯ ◯                    ◯       ◯ ◯                    ✕ ◯     ◯ ◯                               
-╒═╤═╤═╤═╤═╕                    ╒═╤═╤═╤═╤═╕                    ╒═╤═╤═╤═╤═╕                    ╒═╤═╤═╤═╤═╕
-│ │ │ │ │ │                    │ │ │ │ │ │                    │ │ │ │ │ │                    ◯―――――――◯―◯
-├─┼─┼─┼─┼─┤                    ├─┼─┼─┼─┼─┤                    ├─┼─┼─┼─┼─┤                    ├─┼─┼─┼─┼─┤
-│ ◯ ◯ │ │ │                    │ ◯ ◯ ◯ │ │                    │ │ ◯ ◯ │ │                    │ │ │ ◯ │ │
-├─┼─┼─┼─┼─┤                    ├─┼─┼─┼─┼─┤                    ├─┼─┼─┼─┼─┤                    ├─┼─┼─┼─┼─┤
-│ │ │ │ │ │                    │ │ │ │ │ │                    │ │ │ │ │ │                    │ ◯ ◯ │ │ │
-└─┴─┴─┴─┴─┘                    └─┴─┴─┴─┴─┘                    └─┴─┴─┴─┴─┘                    └─┴─┴─┴─┴─┘
+E minor                     E suspended|E suspended 4ᵗʰ A suspended 2ⁿᵈ             F (barre 1)
+◯     ◯ ◯ ◯                 ◯       ◯ ◯                 ✕ ◯     ◯ ◯                            
+╒═╤═╤═╤═╤═╕                 ╒═╤═╤═╤═╤═╕                 ╒═╤═╤═╤═╤═╕                 ╒═╤═╤═╤═╤═╕
+│ │ │ │ │ │                 │ │ │ │ │ │                 │ │ │ │ │ │                 ◯―――――――◯―◯
+├─┼─┼─┼─┼─┤                 ├─┼─┼─┼─┼─┤                 ├─┼─┼─┼─┼─┤                 ├─┼─┼─┼─┼─┤
+│ ◯ ◯ │ │ │                 │ ◯ ◯ ◯ │ │                 │ │ ◯ ◯ │ │                 │ │ │ ◯ │ │
+├─┼─┼─┼─┼─┤                 ├─┼─┼─┼─┼─┤                 ├─┼─┼─┼─┼─┤                 ├─┼─┼─┼─┼─┤
+│ │ │ │ │ │                 │ │ │ │ │ │                 │ │ │ │ │ │                 │ ◯ ◯ │ │ │
+└─┴─┴─┴─┴─┘                 └─┴─┴─┴─┴─┘                 └─┴─┴─┴─┴─┘                 └─┴─┴─┴─┴─┘
 ```
 
 Here is an example of using a [bar chord](https://en.wikipedia.org/wiki/Bar_chord) on the first (1st) fret for F and a [capo](https://en.wikipedia.org/wiki/Capo_(musical_device)) placed on the fourth (4th) fret for G#:
