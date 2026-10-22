@@ -7,7 +7,7 @@ use chord::{CAPO_FRET7, CAPO_FRET8, CAPO_FRET9};
 use once_cell::sync::Lazy;
 use std::collections::HashMap;
 
-pub static ALL_CHORDS: &'static [Chord] = &[
+pub static ALL_CHORDS: &[Chord] = &[
     // ultimate-guitar.com/lessons/chords/guide_to_chord_formation.html
     // NOTE: major is omitted such that A ≡ A major by default
     Chord::new(&["A"], "x02220", &["A"], None, None),

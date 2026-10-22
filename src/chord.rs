@@ -7,7 +7,7 @@ pub struct Capo {
 
 impl Capo {
     pub const fn new(fret: u8) -> Self {
-        Self { fret: fret }
+        Self { fret }
     }
 }
 
@@ -27,7 +27,7 @@ impl Barre {
         Self {
             from_string: 0,
             to_string: 5,
-            fret: fret,
+            fret,
         }
     }
 }
@@ -83,11 +83,11 @@ impl<'a> Chord<'a> {
         barre: Option<Barre>,
     ) -> Self {
         Self {
-            short_names: short_names,
-            pattern: pattern,
-            names: names,
-            capo: capo,
-            barre: barre,
+            short_names,
+            pattern,
+            names,
+            capo,
+            barre,
         }
     }
 

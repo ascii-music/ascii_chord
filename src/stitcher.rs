@@ -5,18 +5,21 @@ use std::cmp::max;
 
 #[derive(Debug, ValueEnum, Clone)]
 pub enum NameStyle {
-    ShortNames,
-    FullNames,
-    BothNames,
+    #[value(name = "short-names")]
+    Short,
+    #[value(name = "full-names")]
+    Full,
+    #[value(name = "both-names")]
+    Both,
 }
 
 pub fn row<'a>(chords: Vec<Chord<'a>>, name_style: NameStyle, padding: u8) -> String {
     let display_names: Vec<String> = chords
         .iter()
         .map(|chord| match name_style {
-            NameStyle::ShortNames => join(chord.short_names.iter(), "|"),
-            NameStyle::FullNames => join(chord.names.iter(), "|"),
-            NameStyle::BothNames => chord.both_names(),
+            NameStyle::Short => join(chord.short_names.iter(), "|"),
+            NameStyle::Full => join(chord.names.iter(), "|"),
+            NameStyle::Both => chord.both_names(),
         })
         .collect();
 
