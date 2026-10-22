@@ -8,7 +8,7 @@
 │ │ ◯ ◯ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## A♯ | B♭ (A# | Bb)
+## A♯ (barre 1) | B♭ (barre 1) (A# | Bb)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -39,7 +39,7 @@
 │ │ ◯ │ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## A♯ raised 7ᵗʰ | B♭ raised 7ᵗʰ (A#maj7 | Bbmaj7)
+## A♯ raised 7ᵗʰ (barre 1) | B♭ raised 7ᵗʰ (barre 1) (A#maj7 | Bbmaj7)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -112,7 +112,7 @@
 │ │ │ │ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## A♯ 7ᵗʰ | B♭ 7ᵗʰ (A#7 | Bb7)
+## A♯ 7ᵗʰ (barre 1) | B♭ 7ᵗʰ (barre 1) (A#7 | Bb7)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -145,7 +145,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## A♯ minor | B♭ minor (A#m | Bbm)
+## A♯ minor (barre 1) | B♭ minor (barre 1) (A#m | Bbm)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -180,7 +180,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## A♯ minor 7ᵗʰ | B♭ minor 7ᵗʰ (A#m7 | Bbm7)
+## A♯ minor 7ᵗʰ (barre 1) | B♭ minor 7ᵗʰ (barre 1) (A#m7 | Bbm7)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -222,7 +222,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## A♯ suspended 2ⁿᵈ | B♭ suspended 2ⁿᵈ (A#sus2 | Bbsus2)
+## A♯ suspended 2ⁿᵈ (barre 1) | B♭ suspended 2ⁿᵈ (barre 1) (A#sus2 | Bbsus2)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -233,7 +233,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## A♯ suspended 4ᵗʰ | B♭ suspended 4ᵗʰ (A#sus4 | Bbsus4)
+## A♯ suspended 4ᵗʰ (barre 1) | B♭ suspended 4ᵗʰ (barre 1) (A#sus4 | Bbsus4)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -308,7 +308,7 @@
 │ ◯ ◯ │ │ ◯
 └─┴─┴─┴─┴─┘
 ```
-## A minor added 2ⁿᵈ (no bar) (Amadd2)
+## A minor added 2ⁿᵈ (Amadd2)
 ```
 ✕ ◯       ◯
 ╒═╤═╤═╤═╤═╕
@@ -429,7 +429,7 @@
 │ ◯ │ ◯ ◯ ◯
 └─┴─┴─┴─┴─┘
 ```
-## B minor (Bm)
+## B minor (barre 2) (Bm)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -442,7 +442,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## B minor (no bar) (Bm)
+## B minor (Bm)
 ```
 ✕ ✕        
 ╒═╤═╤═╤═╤═╕
@@ -455,7 +455,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## B minor 7ᵗʰ (Bm7)
+## B minor 7ᵗʰ (barre 2) (Bm7)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -488,7 +488,7 @@
 │ ◯ │ ◯ ◯ ◯
 └─┴─┴─┴─┴─┘
 ```
-## B suspended 2ⁿᵈ (Bsus2)
+## B suspended 2ⁿᵈ (barre 2) (Bsus2)
 ```
 ✕          
 ╒═╤═╤═╤═╤═╕
@@ -993,7 +993,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## D♯ minor (no bar) | E♭ minor (no bar) (D#m | Ebm)
+## D♯ minor | E♭ minor (D#m | Ebm)
 ```
 ✕ ✕        
 ╒═╤═╤═╤═╤═╕
@@ -1048,7 +1048,7 @@
 │ │ │ │ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## D♯ suspended 2ⁿᵈ | E♭ suspended 2ⁿᵈ (D#sus2 | Ebsus2)
+## D♯ suspended 2ⁿᵈ (barre 1) | E♭ suspended 2ⁿᵈ (barre 1) (D#sus2 | Ebsus2)
 ```
 ✕ ✕        
 ╒═╤═╤═╤═╤═╕
@@ -1302,7 +1302,7 @@
 │ ◯ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F (F)
+## F (barre 1) (F)
 ```
            
 ╒═╤═╤═╤═╤═╕
@@ -1313,7 +1313,7 @@
 │ ◯ ◯ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F power chord (F5)
+## F power chord (barre 1) (F5)
 ```
       ✕ ✕ ✕
 ╒═╤═╤═╤═╤═╕
@@ -1335,7 +1335,7 @@
 │ │ ◯ │ │ ◯
 └─┴─┴─┴─┴─┘
 ```
-## F♯ | G♭ (F# | Gb)
+## F♯ (barre 2) | G♭ (barre 2) (F# | Gb)
 ```
            
 ╒═╤═╤═╤═╤═╕
@@ -1403,7 +1403,7 @@
 │ ◯ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F♯ 7ᵗʰ | G♭ 7ᵗʰ (F#7 | Gb7)
+## F♯ 7ᵗʰ (barre 2) | G♭ 7ᵗʰ (barre 2) (F#7 | Gb7)
 ```
            
 ╒═╤═╤═╤═╤═╕
@@ -1429,7 +1429,7 @@
 │ │ │ │ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## F minor (Fm)
+## F minor (barre 1) (Fm)
 ```
            
 ╒═╤═╤═╤═╤═╕
@@ -1440,7 +1440,7 @@
 │ ◯ ◯ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F minor (no bar) (Fm)
+## F minor (Fm)
 ```
 ✕ ✕        
 ╒═╤═╤═╤═╤═╕
@@ -1451,7 +1451,7 @@
 │ │ ◯ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F♯ minor | G♭ minor (F#m | Gbm)
+## F♯ minor (barre 2) | G♭ minor (barre 2) (F#m | Gbm)
 ```
            
 ╒═╤═╤═╤═╤═╕
@@ -1475,7 +1475,7 @@
 │ ◯ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F♯ minor 7ᵗʰ | G♭ minor 7ᵗʰ (F#m7 | Gbm7)
+## F♯ minor 7ᵗʰ (barre 2) | G♭ minor 7ᵗʰ (barre 2) (F#m7 | Gbm7)
 ```
            
 ╒═╤═╤═╤═╤═╕
@@ -1521,7 +1521,7 @@
 │ ◯ ◯ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F suspended 4ᵗʰ (Fsus4)
+## F suspended 4ᵗʰ (barre 1) (Fsus4)
 ```
            
 ╒═╤═╤═╤═╤═╕
@@ -1532,7 +1532,7 @@
 │ ◯ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F♯ suspended 4ᵗʰ | G♭ suspended 4ᵗʰ (F#sus4 | Gbsus4)
+## F♯ suspended 4ᵗʰ (barre 2) | G♭ suspended 4ᵗʰ (barre 2) (F#sus4 | Gbsus4)
 ```
            
 ╒═╤═╤═╤═╤═╕
@@ -1781,7 +1781,7 @@
 ◯ │ │ │ ◯ ◯
 └─┴─┴─┴─┴─┘
 ```
-## G♯ suspended 2ⁿᵈ | A♭ suspended 2ⁿᵈ (G#sus2 | Absus2)
+## G♯ suspended 2ⁿᵈ (barre 1) | A♭ suspended 2ⁿᵈ (barre 1) (G#sus2 | Absus2)
 ```
            
 ╒═╤═╤═╤═╤═╕
