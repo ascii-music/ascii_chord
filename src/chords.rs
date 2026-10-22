@@ -358,7 +358,7 @@ pub static ALL_CHORDS: &'static [Chord] = &[
         Some(CAPO_FRET4),
         None,
     ),
-    Chord::new(&["G/A"], "x00033", &["G over A"], None, None),
+    Chord::new(&["G/A"], "x00003", &["G over A"], None, None),
     Chord::new(&["G/B"], "x20033", &["G over B"], None, None),
     Chord::new(&["G/F"], "120033", &["G over F"], None, None),
     Chord::new(&["G/F#", "G/Gb"], "220033", &["G over F♯", "G over G♭"], None, None),
