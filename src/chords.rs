@@ -176,7 +176,7 @@ pub static ALL_CHORDS: &[Chord] = &[
     Chord::new(&["D5"], "xx023x", &["D power chord"], None, None),
     Chord::new(&["D+"], "xx0332", &["D augmented"], None, None),
     Chord::new(&["Dmaj7"], "xx0222", &["D raised 7ᵗʰ"], None, None),
-    Chord::new(&["D6"], "x00202", &["D 6ᵗʰ"], None, None),
+    Chord::new(&["D6"], "xx0202", &["D 6ᵗʰ"], None, None),
     Chord::new(&["Dadd9"], "xx4230", &["D added 9ᵗʰ"], None, None),
     Chord::new(&["D7"], "xx0212", &["D 7ᵗʰ"], None, None),
     Chord::new(&["D9"], "200210", &["D 9ᵗʰ"], None, None),
