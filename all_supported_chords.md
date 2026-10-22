@@ -172,7 +172,18 @@
 │ │ │ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## A suspended | A suspended 4ᵗʰ (Asus | Asus4)
+## A suspended (shape 1) | A suspended 4ᵗʰ (shape 1) (Asus | Asus4)
+```
+✕ ◯       ◯
+╒═╤═╤═╤═╤═╕
+│ │ │ │ │ │
+├─┼─┼─┼─┼─┤
+│ │ ◯ ◯ │ │
+├─┼─┼─┼─┼─┤
+│ │ │ │ ◯ │
+└─┴─┴─┴─┴─┘
+```
+## A suspended (shape 2) | A suspended 4ᵗʰ (shape 2) (Asus | Asus4)
 ```
 ✕ ✕       ◯
 ╒═╤═╤═╤═╤═╕
@@ -183,7 +194,7 @@
 │ │ │ │ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## A suspended 4ᵗʰ (shape 2) (Asus4)
+## A suspended 4ᵗʰ (shape 3) (Asus4)
 ```
 ✕ ◯       ✕
 ╒═╤═╤═╤═╤═╕
