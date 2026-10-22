@@ -299,7 +299,7 @@
 ◯ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## A minor added 2ⁿᵈ (Amadd2)
+## A minor added 2ⁿᵈ (capo 5) (Amadd2)
 ```
 ◯     ◯ ◯  
 ╒𝟻╤𝟻╤𝟻╤𝟻╤𝟻╕
@@ -380,7 +380,7 @@
 │ │ │ │ │ ◯
 └─┴─┴─┴─┴─┘
 ```
-## B augmented (capo) (B+)
+## B augmented (capo 3) (B+)
 ```
 ✕ ✕ ✕     ◯
 ╒𝟹╤𝟹╤𝟹╤𝟹╤𝟹╕
@@ -501,7 +501,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## B suspended | B suspended 4ᵗʰ (Bsus | Bsus4)
+## B suspended (capo 2) | B suspended 4ᵗʰ (capo 2) (Bsus | Bsus4)
 ```
 ✕ ◯       ◯
 ╒𝟸╤𝟸╤𝟸╤𝟸╤𝟸╕
@@ -568,7 +568,7 @@
 │ ◯ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## C♯ | D♭ (C# | Db)
+## C♯ (capo 4) | D♭ (capo 4) (C# | Db)
 ```
 ✕ ◯       ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -599,7 +599,7 @@
 │ ◯ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## C♯ raised 7ᵗʰ | D♭ raised 7ᵗʰ (C#maj7 | Dbmaj7)
+## C♯ raised 7ᵗʰ (capo 4) | D♭ raised 7ᵗʰ (capo 4) (C#maj7 | Dbmaj7)
 ```
 ✕ ◯       ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -654,7 +654,7 @@
 │ ◯ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## C♯ 7ᵗʰ | D♭ 7ᵗʰ (C#7 | Db7)
+## C♯ 7ᵗʰ (capo 4) | D♭ 7ᵗʰ (capo 4) (C#7 | Db7)
 ```
 ✕ ◯   ◯   ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -685,7 +685,7 @@
 │ ◯ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## C♯ minor | D♭ minor (C#m | Dbm)
+## C♯ minor (capo 4) | D♭ minor (capo 4) (C#m | Dbm)
 ```
 ✕ ◯       ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -705,7 +705,7 @@
 │ ◯ │ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## C♯ minor 7ᵗʰ | D♭ minor 7ᵗʰ (C#m7 | Dbm7)
+## C♯ minor 7ᵗʰ (capo 4) | D♭ minor 7ᵗʰ (capo 4) (C#m7 | Dbm7)
 ```
 ✕ ◯   ◯   ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -736,7 +736,7 @@
 │ ◯ │ │ │ ◯
 └─┴─┴─┴─┴─┘
 ```
-## C♯ suspended 2ⁿᵈ | D♭ suspended 2ⁿᵈ (C#sus2 | Dbsus2)
+## C♯ suspended 2ⁿᵈ (capo 4) | D♭ suspended 2ⁿᵈ (capo 4) (C#sus2 | Dbsus2)
 ```
 ✕ ◯     ◯ ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -756,7 +756,7 @@
 │ ◯ ◯ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## C♯ suspended 4ᵗʰ | D♭ suspended 4ᵗʰ (C#sus4 | Dbsus4)
+## C♯ suspended 4ᵗʰ (capo 4) | D♭ suspended 4ᵗʰ (capo 4) (C#sus4 | Dbsus4)
 ```
 ✕ ◯       ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -844,7 +844,7 @@
 │ │ ◯ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## D♯ | E♭ (D# | Eb)
+## D♯ (capo 6) | E♭ (capo 6) (D# | Eb)
 ```
 ✕ ◯       ◯
 ╒𝟼╤𝟼╤𝟼╤𝟼╤𝟼╕
@@ -984,7 +984,7 @@
 │ │ │ │ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## D♯ minor | E♭ minor (D#m | Ebm)
+## D♯ minor (capo 6) | E♭ minor (capo 6) (D#m | Ebm)
 ```
 ✕ ◯       ◯
 ╒𝟼╤𝟼╤𝟼╤𝟼╤𝟼╕
@@ -1061,7 +1061,7 @@
 │ │ │ │ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## D♯ suspended 4ᵗʰ | E♭ suspended 4ᵗʰ (D#sus4 | Ebsus4)
+## D♯ suspended 4ᵗʰ (capo 6) | E♭ suspended 4ᵗʰ (capo 6) (D#sus4 | Ebsus4)
 ```
 ✕ ◯       ◯
 ╒𝟼╤𝟼╤𝟼╤𝟼╤𝟼╕
@@ -1499,7 +1499,7 @@
 │ │ ◯ ◯ │ │
 └─┴─┴─┴─┴─┘
 ```
-## F suspended 2ⁿᵈ (Fsus2)
+## F suspended 2ⁿᵈ (capo 8) (Fsus2)
 ```
 ✕ ◯     ◯ ◯
 ╒𝟾╤𝟾╤𝟾╤𝟾╤𝟾╕
@@ -1615,7 +1615,7 @@
 ◯ │ │ │ │ ◯
 └─┴─┴─┴─┴─┘
 ```
-## G♯ | A♭ (G# | Ab)
+## G♯ (capo 4) | A♭ (capo 4) (G# | Ab)
 ```
 ◯       ◯ ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -1646,7 +1646,7 @@
 ◯ │ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## G♯ raised 7ᵗʰ | A♭ raised 7ᵗʰ (G#maj7 | Abmaj7)
+## G♯ raised 7ᵗʰ (capo 3) | A♭ raised 7ᵗʰ (capo 3) (G#maj7 | Abmaj7)
 ```
 ✕ ✕       ◯
 ╒𝟹╤𝟹╤𝟹╤𝟹╤𝟹╕
@@ -1690,7 +1690,7 @@
 ◯ │ ◯ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## G♯ 7ᵗʰ | A♭ 7ᵗʰ (G#7 | Ab7)
+## G♯ 7ᵗʰ (capo 4) | A♭ 7ᵗʰ (capo 4) (G#7 | Ab7)
 ```
 ◯   ◯   ◯ ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -1721,7 +1721,7 @@
 │ │ │ ◯ ◯ ◯
 └─┴─┴─┴─┴─┘
 ```
-## G♯ minor | A♭ minor (G#m | Abm)
+## G♯ minor (capo 4) | A♭ minor (capo 4) (G#m | Abm)
 ```
 ◯     ◯ ◯ ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -1741,7 +1741,7 @@
 ◯ │ │ ◯ ◯ │
 └─┴─┴─┴─┴─┘
 ```
-## G minor 7ᵗʰ (shape 2) (Gm7)
+## G minor 7ᵗʰ (shape 2) (capo 3) (Gm7)
 ```
 ◯   ◯ ◯ ◯ ◯
 ╒𝟹╤𝟹╤𝟹╤𝟹╤𝟹╕
@@ -1750,7 +1750,7 @@
 │ ◯ │ │ │ │
 └─┴─┴─┴─┴─┘
 ```
-## G♯ minor 7ᵗʰ | A♭ minor 7ᵗʰ (G#m7 | Abm7)
+## G♯ minor 7ᵗʰ (capo 4) | A♭ minor 7ᵗʰ (capo 4) (G#m7 | Abm7)
 ```
 ◯   ◯ ◯ ◯ ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
@@ -1805,7 +1805,7 @@
 ◯ ◯ │ │ │ ◯
 └─┴─┴─┴─┴─┘
 ```
-## G♯ suspended 4ᵗʰ | A♭ suspended 4ᵗʰ (G#sus4 | Absus4)
+## G♯ suspended 4ᵗʰ (capo 4) | A♭ suspended 4ᵗʰ (capo 4) (G#sus4 | Absus4)
 ```
 ◯       ◯ ◯
 ╒𝟺╤𝟺╤𝟺╤𝟺╤𝟺╕
